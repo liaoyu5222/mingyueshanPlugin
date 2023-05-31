@@ -1,6 +1,6 @@
 # mingyueshanPlugin
 共建明月山安卓原生module插件使用方法：
-1.此插件需要uniapp集成oAuth微信登录模块用于插件内跳转小程序,还需集成高德地图定位模块用于天气定位，需要集成videPlayer视频用于插件顶部banner视频播放，需要集成Payment(支付)中的微信支付和支付宝支付模块，需要集成share(分享)中的微信分享模块
+1.此插件需要uniapp集成oAuth微信登录模块用于插件内跳转小程序,还需集成高德地图定位模块用于天气定位,安卓appkey需要填写977cf27b580aec9ef818feec3dd1992b，需要集成videPlayer视频用于插件顶部banner视频播放，需要集成Payment(支付)中的微信支付和支付宝支付模块，需要集成share(分享)中的微信分享模块
 2.在需要集成插件的uniapp的mainfest.json源码配置视图中的app-plus节点下的android节点下增加如下属性：
  "buildFeatures" : {
                     "dataBinding" : true, //开启dataBinding

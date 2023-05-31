@@ -1,13 +1,14 @@
 # mingyueshanPlugin
 共建明月山安卓原生module插件使用方法：
-1.在需要集成插件的uniapp的mainfest.json源码配置视图中的app-plus节点下的android节点下增加如下属性：
+1.此插件需要uniapp集成Auth微信登录模块用于插件内跳转小程序,还需集成高德地图定位模块用于天气定位，需要集成videPlayer视频用于插件顶部banner视频播放
+2.在需要集成插件的uniapp的mainfest.json源码配置视图中的app-plus节点下的android节点下增加如下属性：
  "buildFeatures" : {
                     "dataBinding" : true, //开启dataBinding
                     "viewBinding" : true //开启viewBinding
                 }
 此属性用于开启视图绑定。还需增加一个  "targetSdkVersion" : 29  属性，因为插件中内嵌智慧大竹app中获取权限最低安卓版本API要求29。
 
-2. 此插件有两个可被uniapp调用的方法
+3. 此插件有两个可被uniapp调用的方法
 方法1
    @UniJSMethod(uiThread = true)
     public void qiFuWeb(String wx_appid,String url,String title){
